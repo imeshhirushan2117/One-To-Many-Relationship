@@ -27,7 +27,7 @@ public class Customer {
     private String address;
 
     @OneToMany (mappedBy = "customer" , cascade = CascadeType.ALL)
-    List<Orders> orders;
+    private List<Orders> orders;
 
     public Customer(Integer customerId, String name, String address) {
         this.customerId = customerId;

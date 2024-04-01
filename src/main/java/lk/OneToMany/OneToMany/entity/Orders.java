@@ -29,5 +29,5 @@ public class Orders {
 
     @ManyToOne
     @JoinColumn(name = "customer_Id") //colum name
-    Customer customer ;
+    private Customer customer ;
 }
