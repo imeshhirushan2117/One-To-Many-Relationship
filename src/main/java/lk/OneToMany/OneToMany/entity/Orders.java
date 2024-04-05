@@ -1,5 +1,6 @@
 package lk.OneToMany.OneToMany.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,5 +30,6 @@ public class Orders {
 
     @ManyToOne
     @JoinColumn(name = "customer_Id") //colum name
+    @JsonIgnore
     private Customer customer ;
 }
